@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Design Agency</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        #services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 30px;
+        }
+        
+       
+        
+        #row1,
+        #row3 {
+            background-color: rgba(142, 248, 239, 0.6);
+        }
+        
+        #row2 {
+            background-color: rgba(193, 158, 240, 0.6);
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        @media only screen and (max-width: 50em) {
+            #services {
+               grid-template-columns: 1fr;
+                padding: 10px;
+            } 
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top-header">
+        <section class="headings">
+            <h1> Web Agency</h1>
+            <div id="motto">We create the best option for you</div>
+        </section>
+
+    </header>
+    <nav>
+        <ul class="navigation">
+
+            <li><a href="assign04.html">Home</a></li>
+            <li><a href="assign04_2.html">Services</a></li>
+
+
+        </ul>
+    </nav>
+    <main>
+        <div id="services">
+            <div class="detail" id="row1">
+
+                <div>
+                    <section>
+                        <h2>Design</h2>
+                        <div>
+                            <img src="images/graphic-design.jpg" alt="design">
+                        </div>
+                        <hr>
+                        <p>
+                            The graphics are our best abilitie, we can crate anything from your imagination or help you to create by your own. With the perfect tools and the best professionals, we are ready to create your new brand!. The image you will offer to the market will be
+                            outstanding, clever and modern.
+                        </p>
+                    </section>
+                    <a class="button" href="https://www.interaction-design.org/literature/topics/graphic-design" target="_blank">Read more</a>
+
+                </div>
+
+            </div>
+
+            <div class="detail" id="row2">
+
+                <div>
+                    <section>
+                        <h2>Development</h2>
+                        <div>
+                            <img src="images/web-developer.jpg" alt="web-development">
+                        </div>
+                        <hr>
+                        <p>
+                            All the information available in the web is a great source of opportunities. The same will happen with your business if we wrok together to development the information system adpated to your needs, the application to interact with your clients and the
+                            members of your organization.
+                        </p>
+                    </section>
+                    <a class="button" href="https://www.w3schools.com/whatis/" target="_blank">Read more</a>
+                </div>
+
+            </div>
+            <div class="detail" id="row3">
+
+                <div>
+                    <section>
+                        <h2>Marketing</h2>
+                        <div>
+                            <img src="images/marketing.jpg" alt="marketing">
+                        </div>
+                        <hr>
+                        <p>
+                            After all this proccess you are almost ready to be the best on your branch. A few more stepd and we are done, for that reason the marketing campaigns using socila media and emails will increase the potential clients for your company with only one click.
+                            Your system will integrate with marketing and reports!
+                        </p>
+                    </section>
+                    <a class="button" href="https://blog.hubspot.com/marketing/what-is-digital-marketing" target="_blank">Read more</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <a href="../index.html">Hector Rodriguez</a> | Venezuela | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+
+    </footer>
+</body>
+
+
+</html>

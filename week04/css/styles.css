@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Shadows+Into+Light&display=swap');
+
+.web-design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.top-header {
+    text-align: center;
+    background-color: #FC6414;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headings {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#motto {
+    color: #282b40;
+    font-size: 1.3rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.headings h1 {
+    font-size: 2rem;
+}
+
+header,
+footer {
+    background-color: #FC6414;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+header,
+footer,
+main,
+body {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 75vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+li a:hover {
+    background-color: #FFAC00;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.button:hover {
+    color: #F1F2EC;
+    background-color: #FFAC00;
+}
+
+img {
+    width: 100%;
+}
