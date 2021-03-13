@@ -4,12 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign #7</title>
+    <title>Mortage Calculator</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    </style>
 </head>
 
 <body>
-   
-    This will be assignment #7
+    <header class="top-header">
+        <section class="headings">
+            <h1> Mortage Calculator</h1>
+            <div id="motto">Calculate your payments</div>
+        </section>
+
+    </header>
+<!--     <nav>
+        <ul class="navigation">
+            <li><a href="assign04.html">Home</a></li>
+            <li><a href="assign04_2.html">Services</a></li>
+
+
+        </ul>
+    </nav> -->
+
+    <main>
+        <form method="post" action="/" id="form">
+            <fieldset>
+                <legend>Mortage Calculator</legend>
+                <label for="apr" class="lrequired">APR (Annual Percentage Rate ) :(*)
+                    <input type="number" step="0.01" name="apr" id="apr" required>
+                </label>
+                <label for="term" class="lrequired">Loan Term (in years) :(*)
+                    <input type="number" onkeypress="return onlyNumberKey(event)" step="1" name="term" id="term" required>
+                </label>
+                <label for="amount" class="lrequired">Loan Amount (in dollars) :(*)
+                    <input type="number" step="0.01" name="amount" id="amount" required>
+                </label>
+                <label for="payment">Monthly Payment:
+                    <input type="text"  name="payment" id="payment" disabled>
+                </label>
+                
+            </fieldset>
+            <div id= "output"></div>
+            <div class="form-bottom">
+               
+               
+                <input class="button" type="button" id="submit" value="Submit">
+                <input class="button reset" type="button" id="reset" value="Reset">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="../index.html">Hector Rodriguez</a> | Venezuela | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+
+    </footer>
+    <script src="js/validations.js"></script>
 </body>
+
 
 </html>

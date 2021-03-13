@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Shadows+Into+Light&display=swap');
+html {
+    font-size: 1em;
+  }
+.web-design {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+#about h1{
+    text-align: center;
+    font-size: calc(1rem + 0.9vw);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+ 
+  }
+.top-header {
+    text-align: center;
+    background-color: #00a4e4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headings {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#motto {
+    color: #282b40;
+    font-size: calc(1rem + 0.9vw);
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.headings h2 {
+    font-size: calc(1.4rem + 2vw);
+}
+
+header,
+footer {
+    background-color: #00a4e4;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+p {
+    font-size: calc(0.8rem + 0.4vw);
+}
+small{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: calc(0.8rem + 0.4vw);
+}
+header,
+footer,
+main,
+body {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: calc(0.9rem + 0.5vw);
+    font-family: 'Roboto Mono', monospace;
+}
+
+li a:hover {
+    background-color: #4CAF50;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #F1F2EC;
+    background-color: #c1d82f;
+}
+
+img {
+    max-width: 100%;
+}
+/* The hero image */
+
+.herodiv {
+    background: url('../images/hero-img.jpg') center center no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+}
+
+.hero-image {
+    position: relative;
+}
+
+
+.h1-light {
+    background-color: #00a4e4;
+    color: #F1F2EC;
+    mix-blend-mode: multiply;
+    font-size: 5vw;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    overflow-wrap: break-word;
+    border-radius: 8px;
+    box-shadow: 0 0 16px #00a4e4, 0 0 32px #00a4e4;
+    padding: 16px;
+    font-family: 'Shadows Into Light', cursive;
+}
+@media only screen and (min-width: 600px) {/*Medium*/
+    .h1-light {
+        background-color: #fbb034;
+        box-shadow: 0 0 16px #fbb034, 0 0 32px #fbb034;
+    }
+}
+@media only screen and (min-width: 800px) {/*Large*/
+    .about-us {
+        grid-template-columns: 1.5fr 2fr;
+
+    }
+    .web-design {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    
+    }
+    .h1-light {
+        background-color: #4CAF50;
+        box-shadow: 0 0 16px #4CAF50, 0 0 32px #4CAF50;
+    }
+}

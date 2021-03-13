@@ -4,12 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign #8</title>
+    <title>Internet Sale</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
-   
-    This will be assignment #8
+    <header class="top-header">
+        <section class="headings">
+            <h1> Online Store</h1>
+            <div id="motto">Buy all you need</div>
+        </section>
+
+    </header>
+
+
+    <main>
+        <form id="form" method="GET" action="result.html">
+            <fieldset>
+                <legend></legend>
+                <div id="f_name">
+                    <label for="first_name">First Name :
+                        <input type="text" name="first_name" id="first_name" autocomplete="off" title ="Register the first name" required>
+                    </label>
+                </div>
+                <div id="l_name">
+                    <label for="last_name">Last Name :
+                        <input type="text" name="last_name" id="last_name" autocomplete="off" title ="Register the last name" required>
+                    </label>
+                </div>
+                <div id="address_div">
+                    <label for="address">
+                        Address:
+                        <textarea name="address" id="address" autocomplete="off" title ="Register the address" required></textarea>
+                    </label>
+                </div>
+                <div id="phone_div">
+                    <label for="phone">Phone :
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder = "555-555-5555" onkeypress="return fnAllowNumeric(event)" maxlength="12"
+                            title="The phone number must be of the format 555-555-5555" required autocomplete="off">
+                    </label>
+                </div>
+                <div>Products</div>
+                <br>
+                <input type="checkbox" id="item_0" name="item_0" value="5" class="item">
+                <label for="item_0"> Chocolat <span class="price">$5</span></label><br>
+                <input type="checkbox" id="item_1" name="item_1" value="3" class="item">
+                <label for="item_1"> Milk <span class="price">$3</span></label><br>
+                <input type="checkbox" id="item_2" name="item_2" value="10" class="item">
+                <label for="item_2"> Bread x 3 Packs <span class="price">$10</span></label><br>
+                <input type="checkbox" id="item_3" name="item_3" value="6" class="item">
+                <label for="item_3"> Water 2 Gallons <span class="price">$6</span></label><br><br>
+                <label for="total">Total :
+                    <input type="text" name="total" id="total" disabled>
+                </label>
+                <div id = "type_div">
+                    <p>Credit Card Type:</p>
+                    <input type="radio" id="visa" name="card" value="visa">
+                    <label for="visa">Visa</label><br>
+                    <input type="radio" id="mastercard" name="card" value="mastercard">
+                    <label for="mastercard">Mastercard</label><br>
+                    <input type="radio" id="american" name="card" value="american">
+                    <label for="american">American Express</label>
+                </div>
+                <div id="outputType"></div>
+
+                <br>
+                <div id="card_div" >
+                    <label for="credit_card">Credit Card #</label>
+                    <input id="credit_card" name="credit_card" type="text" placeholder = "**** **** **** ****" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}"   maxlength="19" onkeypress="return onlyNumberKey(event)" title ="Register the credit card **** **** **** ****" required>
+                </div>
+                <div id="exp_div" >
+                    <label for="exp_date">Credit Card Expiration Date</label>
+                    <input id="exp_date" name="exp_date" type="text" pattern="(0[1-9]|10|11|12)\/\d{4}$" title ="Register expiration date mm/yyyyy" maxlength="7" onkeypress="return onlyNumberDateKey(event)" placeholder= "mm/yyyy" required>
+                </div>
+
+
+            </fieldset>
+            <div id="output"></div>
+            <div class="form-bottom">
+
+
+                <input class="button" type="button" id="validate" name ="validate" value="Submit">
+                <input class="button reset" type="button" id="reset" value="Reset">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <a href="../index.html">Hector Rodriguez</a> | Venezuela | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+
+    </footer>
+    <script src="js/validations.js"></script>
 </body>
+
 
 </html>

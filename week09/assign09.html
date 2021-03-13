@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign #9</title>
+    <title>Assign Week #9</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
-   
-    This will be assignment #9
+    <header class="top-header">
+        <section class="headings">
+            <h1> Week 9</h1>
+            <div id="motto">Files</div>
+        </section>
+
+    </header>
+
+
+    <main>
+        <div>
+            <h3>List largest cit by country</h3>
+            <label for="countries">Country:</label>
+            <select onchange="loadDoc()" id="countries">
+                <option value="" selected disabled hidden>Choose Country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="russia">Russia</option>
+            </select>
+            <div class="table-container">
+                <table id="list"></table>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3>Search JSON file</h3>
+            <div>
+                <label for="last_name">File name :
+                    <input type="text" name="file_name" id="file_name" value="json.txt" autocomplete="off">
+                </label>
+                <button type="button" class="button" id="search" onclick="loadJSON()">Search</button>
+            </div>
+            <div id="outputError"></div>
+            <div class="table-container">
+                <table id="listStudents"></table>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <a href="../index.html">Hector Rodriguez</a> | Venezuela | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+
+    </footer>
+    <script src="js/functions.js"></script>
 </body>
+
 
 </html>
