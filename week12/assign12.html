@@ -4,12 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assign #12</title>
+    <title>Assign Week 10</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
 
 <body>
-   
-    This will be assignment #12
+    <header class="top-header">
+        <section class="headings">
+            <h1> Week 12</h1>
+            <div id="motto">Mileage Calculator</div>
+        </section>
+
+    </header>
+
+
+    <main>
+        <form>
+            <fieldset>
+                <legend>Mileage Calculator</legend>
+                <div id="start_city_div">
+                    <label for="startCity">Start city :(*)
+                        <input type="text" name="startCity" id="startCity" title="Start City" placeholder="Register a start city" onkeypress="return onlyLetterAndSpace(event,this)" autocomplete="off"   required>
+                    </label>
+                </div>
+                <div id="start_state_div">
+                    <label for="startState">Start state :(*)
+                        <input type="text" name="startState" id="startState" title="Start State" placeholder="Register a start state" onkeypress="return onlyLetterAndSpace(event,this)" maxlength="2" autocomplete="off"  required>
+                    </label>
+                </div>
+                <div id="destination_city_div">
+                    <label for="endCity">Destination city :(*)
+                        <input type="text" name="endCity" id="endCity" title="Destination City" placeholder="Register a destination city" onkeypress="return onlyLetterAndSpace(event,this)" autocomplete="off" required>
+                    </label>
+                </div>
+                <div id="destination_state_div">
+                    <label for="endState">Destination state :(*)
+                        <input type="text" name="endState" id="endState" title="Destination State" placeholder="Register a destination state"onkeypress="return onlyLetterAndSpace(event,this)"  autocomplete="off" maxlength="2" required>
+                    </label>
+                </div>
+
+                 
+            <div class="form-bottom">
+                <button class="button" type="button" id="calculate" >Calculate</button>
+             
+            </div>
+        </fieldset> 
+        <div id="outputError"></div>
+        <div class="card-container" id= "travelDetails">
+            
+        </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; <a href="../index.html">Hector Rodriguez</a> | Venezuela | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a></p>
+
+    </footer>
+    <script src="js/functions.js"></script> 
 </body>
+
 
 </html>

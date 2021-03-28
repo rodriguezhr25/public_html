@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&family=Shadows+Into+Light&display=swap');
+
+
+
+.top-header {
+    text-align: center;
+    background-color: #00a4e4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.headings {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#motto {
+    color: #282b40;
+    font-size: 1.3rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.headings h1 {
+    font-size: 2rem;
+}
+
+
+h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: red;
+}
+h4 span{
+    color: #4CAF50;
+
+}
+
+select,
+textarea {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+}
+input[type=text], input[type=number],input[type=tel]{
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+   
+}
+.city-state{
+    text-transform: uppercase;
+}
+
+.invalid {
+    background-color: #F1F2EC;   
+    border: 2px dashed red; 
+
+    outline: none;
+}
+.p-invalid{
+    color: red;
+    margin-left: 20px;
+}
+  
+.valid {
+    border: 2px solid green;
+}
+
+fieldset {
+    width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border-color: #FC6414;
+    margin: 20px auto;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: #282b40;
+    font-weight: bolder;
+}
+
+.lrequired {
+    color: red;
+}
+.form-bottom{
+    margin: 10px;
+}
+
+
+.price{
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+header,
+footer {
+    background-color: #00a4e4;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+header,
+footer,
+main,
+body {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 75vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    display: block;
+    flex: 1 1 100%;
+}
+
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+li a:hover {
+    background-color: #FFAC00;
+} */
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+.reset{
+    background-color: #dc3545;
+}
+.button:hover {
+    color: #F1F2EC;
+    background-color: #FFAC00;
+}
+.button:disabled {
+    color: #F1F2EC;
+    background-color: #333;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+ 
+  td, th{
+      padding: 5px;
+  }
+
+  .card-container{
+      display: flex;
+      justify-content: center;
+      margin: 20px 0px;
+  }
+  .card{
+      border-radius: 5px;
+      color:  #F1F2EC;
+      padding: 20px;
+  }
+  .card-valid{
+    background-color: #4CAF50;
+    
+}
+.card-error{
+  background-color: #dc3545;
+  
+}
+img {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {/*Medium*/
+    .h1-light {
+        background-color: #fbb034;
+        box-shadow: 0 0 16px #fbb034, 0 0 32px #fbb034;
+    }
+}
+@media only screen and (min-width: 800px) {/*Large*/
+    .web-design {
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+}
